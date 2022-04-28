@@ -1,0 +1,189 @@
+:root {
+    --title-text-color: #212121;
+    --primary-text-color: #757575;
+    --accent-color: #2196f3;
+    --primary-background-color: #ffffff;
+    --second-background-color: #2F303A;
+    --primary-white-color: #ffffff;
+    --third-background-color: #f5f4fa;
+    --logo-text-color: #000000;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+.list {
+    list-style: none;
+}
+.link-logo {
+    color: var(--logo-text-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px; 
+}
+
+.logo {
+    color: var(--accent-color);
+}
+.link {
+    text-decoration: none;
+}
+.nav-page,
+.contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+.nav .link {
+    color: var(--title-text-color);
+}
+.nav-page .link:hover,
+.nav-page .link:focus,
+.nav-page .link.current {
+    color: var(--accent-color);
+}
+.contact {
+    color: var(--primary-text-color);
+    font-style: normal;
+}
+.contact:hover,
+.contact:focus {
+    color: var(--accent-color);
+}
+.hero {
+    background: var(--second-background-color);
+}
+.hero-title {
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-btn {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);  
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+.service-title {
+    color:var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+.team {
+    background-color: var(--third-background-color);
+}
+.team-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
+}
+.team-foto {
+    background-color: var(--primary-background-color);
+}
+.foto-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    text-align: center;
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.18;
+     /* identical to box height */
+    text-align: center;
+    
+}
+.footer {
+    background-color: var(--second-background-color);
+}
+.logo-footer {
+    color: var(--primary-white-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+     /* identical to box height */
+}
+.link-address {
+    font-style: normal;
+    color: var(--primary-white-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+.link-contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.link-address:hover,
+.link-address:focus,
+.link-contact:hover,
+.link-contact:focus {
+    color: var(--accent-color);
+}
+.btn {
+    background-color: var(--third-background-color);
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+.btn:hover,
+.btn:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+.project-poster {
+    background-color: var(--primary-white-color);
+}
+.project-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.project-text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+.btn,
+.hero-btn {
+    cursor: pointer;
+}
