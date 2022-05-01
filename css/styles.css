@@ -7,6 +7,7 @@
     --primary-white-color: #ffffff;
     --third-background-color: #f5f4fa;
     --logo-text-color: #000000;
+    --hero-btn-hf-color: #188CE8;
 }
 
 body {
@@ -14,11 +15,27 @@ body {
     background-color: var(--primary-background-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+
+}
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid #2196f3;
 }
 .list {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.link {
+    text-decoration: none;
 }
 .link-logo {
     color: var(--logo-text-color);
@@ -26,32 +43,55 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19; 
+    align-self: center;
+    margin-right: 93px;
+    
 }
 
 .logo {
     color: var(--accent-color);
 }
-.link {
-    text-decoration: none;
-}
+
 .nav-page,
-.contact {
+.nav {
+    display: flex;
+}
+    
+.item .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    
 }
-.nav .link {
-    color: var(--title-text-color);
+.nav-page .item:not(:last-child){
+    margin-right: 50px;
+
 }
+
 .nav-page .link:hover,
 .nav-page .link:focus,
 .nav-page .link.current {
     color: var(--accent-color);
 }
-.contact {
+.contact-header {
+    display: flex;
+    margin-left: auto;
+}
+.contact-header .item + .item {
+    margin-left: 50px;
+}
+.contact.link {
     color: var(--primary-text-color);
     font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .contact:hover,
 .contact:focus {
@@ -59,6 +99,7 @@ body {
 }
 .hero {
     background: var(--second-background-color);
+    text-align: center;
 }
 .hero-title {
     margin-top: 0;
@@ -67,9 +108,10 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    width: 696px;
 }
 .hero-btn {
     color: var(--primary-white-color);
@@ -78,14 +120,18 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    display: inline-block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
     padding: 10px 32px;
-    border: 1px solid transparent;
+    border: none;
 
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--hero-btn-hf-color);
 }
 .section-title {
     color: var(--title-text-color);
@@ -93,10 +139,13 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .text {
     font-size: 14px;
     line-height: 1.71;
+    margin: 0;
 }
 .service-title {
     color:var(--title-text-color);
@@ -104,6 +153,8 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 .team {
     background-color: var(--third-background-color);
@@ -114,6 +165,8 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 .team-foto {
     background-color: var(--primary-background-color);
@@ -125,12 +178,15 @@ body {
     line-height: 1.18;
     /* identical to box height */
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .team-text {
     font-size: 16px;
     line-height: 1.18;
      /* identical to box height */
     text-align: center;
+    margin: 0;
     
 }
 .footer {
@@ -143,6 +199,8 @@ body {
     font-size: 26px;
     line-height: 1.19;
      /* identical to box height */
+     display: inline-block;
+     margin-bottom: 20px;
 }
 .link-address {
     font-style: normal;
@@ -173,7 +231,7 @@ body {
     text-align: center;
     border-radius: 4px;
     padding: 6px 22px;
-    border: 1px solid transparent;
+    border: none;
 }
 .btn:hover,
 .btn:focus {
@@ -189,11 +247,16 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 .project-text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
+    margin-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 .btn,
 .hero-btn {
