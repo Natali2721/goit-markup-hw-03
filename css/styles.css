@@ -282,6 +282,15 @@ img {
 .link-contact:focus {
     color: var(--accent-color);
 }
+.filter-list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.btn-filter {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
 .btn {
     display: inline-block;
     background-color: var(--third-background-color);
@@ -295,6 +304,9 @@ img {
     padding: 6px 22px;
     border: none;
 }
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
 .btn:hover,
 .btn:focus {
     background-color: var(--accent-color);
@@ -303,10 +315,22 @@ img {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
+
 .project-poster {
     background-color: var(--primary-white-color);
+    display: block;
+
+}
+.project-poster {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.project-poster:nth-child(3n) {
+    margin-right: 0;
+}
+.project-poster:nth-last-child(-n + 3) {
+    margin-bottom: 0;
 }
 .project-title {
     color: var(--title-text-color);
@@ -314,16 +338,21 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 4px;
 }
 .project-text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
-    margin-top: 0;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin: 0;
+    
+}
+.poster-bottom {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 .btn,
 .hero-btn {
