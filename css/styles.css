@@ -39,7 +39,7 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid #2196f3;
+    /* outline: 2px solid #2196f3;*/
 }
 .header {
     border-bottom: 1px solid var(--header-border-color);
@@ -65,7 +65,7 @@ img {
     color: var(--accent-color);
 }
     
-.item  {
+.item .link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
