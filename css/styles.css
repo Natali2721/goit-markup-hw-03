@@ -25,6 +25,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+h1, h2, h3, p {
+    margin: 0;
+}
 .link {
     text-decoration: none;
 }
@@ -104,14 +107,20 @@ img {
 .contact:focus {
     color: var(--accent-color);
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .hero {
     background: var(--second-background-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 }
 .hero-title {
-    margin-top: 0;
-    margin: 0 auto 30px auto;
-    padding-top: 200px;
+    margin: 0 auto 30px;
+    
     width: 696px;
     color: var(--primary-white-color);
     font-weight: 900;
@@ -133,17 +142,14 @@ img {
     border-radius: 4px;
     padding: 10px 32px;
     border: none;
-    margin-bottom: 200px;
-
+    margin-bottom: 0;
+    
 }
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--hero-btn-hf-color);
 }
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -194,7 +200,7 @@ img {
     margin-top: 0;
 }
 .service {
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 .service-item:not(:last-child) {
     margin-right: 30px;
@@ -202,6 +208,10 @@ img {
 
 .team {
     background-color: var(--third-background-color);
+}
+.team-photo-txt {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-title {
@@ -233,7 +243,6 @@ img {
     line-height: 1.18;
     /* identical to box height */
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .team-text {
@@ -241,12 +250,13 @@ img {
     line-height: 1.18;
      /* identical to box height */
     text-align: center;
-    margin: 0;
-    padding-bottom: 30px;
+    
     
 }
 .footer {
     background-color: var(--second-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer {
     color: var(--primary-white-color);
@@ -257,7 +267,6 @@ img {
      /* identical to box height */
     display: inline-block;
     margin-bottom: 20px;
-    padding-top: 60px;
 }
 .link-address {
     font-style: normal;
@@ -276,9 +285,7 @@ img {
     margin-bottom: 9p;
 
 }
-.footer-list:last-child {
-    padding-bottom: 60px;
-}
+
 .link-address:hover,
 .link-address:focus,
 .link-contact:hover,
@@ -292,7 +299,7 @@ img {
 .btn-filter {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .btn {
     display: inline-block;
