@@ -17,7 +17,6 @@ body {
     background-color: var(--primary-background-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
-
 }
 
 img {
@@ -25,12 +24,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 h1, h2, h3, p {
     margin: 0;
 }
+
 .link {
     text-decoration: none;
 }
+
 .list {
     list-style: none;
     padding: 0;
@@ -44,9 +46,11 @@ h1, h2, h3, p {
     margin: 0 auto;
     /* outline: 2px solid #2196f3;*/
 }
+
 .header {
     border-bottom: 1px solid var(--header-border-color);
 }
+
 .main-nav,
 .nav-page,
 .nav  {
@@ -77,8 +81,8 @@ h1, h2, h3, p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
 }
+
 .nav-page .item:not(:last-child) {
     margin-right: 50px;
 }
@@ -88,13 +92,16 @@ h1, h2, h3, p {
 .nav-page .link.current {
     color: var(--accent-color);
 }
+
 .contact-header {
     display: flex;
     margin-left: auto;
 }
+
 .contact-header .item + .item {
     margin-left: 50px;
 }
+
 .contact.link {
     color: var(--primary-text-color);
     font-style: normal;
@@ -103,21 +110,24 @@ h1, h2, h3, p {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
 }
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .hero {
     background: var(--second-background-color);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-
 }
+
 .hero-title {
     margin: 0 auto 30px;
     
@@ -128,8 +138,8 @@ h1, h2, h3, p {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
 }
+
 .hero-btn {
     color: var(--primary-white-color);
     background-color: var(--accent-color);  
@@ -139,12 +149,13 @@ h1, h2, h3, p {
     line-height: 1.88;
     display: inline-block;
     letter-spacing: 0.06em;
+
     border-radius: 4px;
     padding: 10px 32px;
     border: none;
     margin-bottom: 0;
-    
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--hero-btn-hf-color);
@@ -172,22 +183,24 @@ h1, h2, h3, p {
 .list-section-item {
     width: 270px;
 }
+
 .list-section-item:not(:last-child) {
     margin-right: 30px;
 }
+
 .section-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-top: 0;
     margin-bottom: 10px;
 }
+
 .text {
     font-size: 14px;
     line-height: 1.71;
-    margin: 0;
+    
 }
 
 .service-title {
@@ -197,7 +210,6 @@ h1, h2, h3, p {
     line-height: 1.16;
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 0;
 }
 .service {
     padding-top: 0;
@@ -222,7 +234,6 @@ h1, h2, h3, p {
     text-align: center;
     
     margin-bottom: 50px;
-    margin-top: 0;
 }
 .team-list {
     display: flex;   
@@ -250,7 +261,6 @@ h1, h2, h3, p {
     line-height: 1.18;
      /* identical to box height */
     text-align: center;
-    
     
 }
 .footer {
@@ -283,7 +293,6 @@ h1, h2, h3, p {
 }
 .footer-list:not(:last-child) {
     margin-bottom: 9px;
-
 }
 
 .link-address:hover,
@@ -348,14 +357,12 @@ h1, h2, h3, p {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 0;
     margin-bottom: 4px;
 }
 .project-text {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
-    margin: 0;
     
 }
 .poster-bottom {
